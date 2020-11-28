@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="on_boarding_welcome_text">Welcome</string>
+    <string name="on_boarding_enter_name_text">Please enter your name</string>
+    <string name="on_boarding_hint_name_text">Name</string>
+    <string name="on_boarding_button_text">Start</string>
+</resources>

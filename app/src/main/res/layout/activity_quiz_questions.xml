@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snow"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_medium">
+
+        <TextView
+            android:id="@+id/textView_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_medium"
+            android:gravity="center"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/font_small_xxx"
+            tools:text="What country does this flag belong to?" />
+
+        <ImageView
+            android:id="@+id/imageView_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:src="@drawable/ic_flag_of_argentina" />
+
+        <LinearLayout
+            android:id="@+id/progressBar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:minHeight="@dimen/progressBar_standard_height"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/textView_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/spacing_medium"
+                android:textColor="@color/grey_dark"
+                android:textColorHint="@color/grey_light"
+                android:textSize="@dimen/font_micro_xxx"
+                tools:text="0/10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_first_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_small"
+            android:background="@drawable/bg_option_round"
+            android:gravity="center"
+            android:padding="@dimen/spacing_medium"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/font_small_x"
+            tools:text="Argentina" />
+
+        <TextView
+            android:id="@+id/textView_second_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_small"
+            android:background="@drawable/bg_option_round"
+            android:gravity="center"
+            android:padding="@dimen/spacing_medium"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/font_small_x"
+            tools:text="Australia" />
+
+        <TextView
+            android:id="@+id/textView_third_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_small"
+            android:background="@drawable/bg_option_round"
+            android:gravity="center"
+            android:padding="@dimen/spacing_medium"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/font_small_x"
+            tools:text="Armenia" />
+
+        <TextView
+            android:id="@+id/textView_fourth_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_small"
+            android:background="@drawable/bg_option_round"
+            android:gravity="center"
+            android:padding="@dimen/spacing_medium"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/font_small_x"
+            tools:text="Austria" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_small"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small_x"
+            android:textStyle="bold"
+            tools:text="SUBMIT" />
+    </LinearLayout>
+
+</ScrollView>
